@@ -1,13 +1,13 @@
 {
-  "compilerOptions": {
-    "baseUrl": "./src",
-    "paths": {
-      "@api/*": ["./api/*"],
-      "@config/*": ["./config/*"],
-      "@modules/*": ["./modules/*"],
-      "@utils/*": ["./shared/utils/*"],
-      "@shared/*": ["./shared/*"]
-    }
-  },
-  "exclude": ["node_modules"]
+   "compilerOptions": {
+      "baseUrl": "./src",
+      "paths": {
+         "@api/*": ["./api/*"],
+         "@config/*": ["./config/*"],
+         "@modules/*": ["./modules/*"],
+         "@utils/*": ["./shared/utils/*"],
+         "@shared/*": ["./shared/*"]
+      }
+   },
+   "exclude": ["node_modules"]
 }

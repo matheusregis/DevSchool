@@ -1,18 +1,17 @@
-// import Mongoose from 'mongoose';
+import Mongoose from 'mongoose';
 
-// class Database {
-//    constructor() {
-//       this.mongo();
-//    }
+class Database {
+   constructor() {
+      this.mongo();
+   }
 
-//    mongo() {
-//       this.mongoConnection = Mongoose.connect(process.env.MONGO_URL, {
-//          useNewUrlParser: true,
-//          useUnifiedTopology: true,
-//          useCreateIndex: true,
-//          useFindAndModify: false,
-//       });
-//    }
-// }
+   mongo() {
+      this.mongoConnection = Mongoose.connect(process.env.MONGO_URL, {
+         useNewUrlParser: true,
+         useUnifiedTopology: true,
+         useCreateIndex: true,
+      });
+   }
+}
 
-// export default new Database();
+export default new Database();
