@@ -1,3 +1,3 @@
-# structure-project-node
+# Developer School
 
-Estrutura do Node Pronta com a arquitetura DDD
+Estrutura do Node
