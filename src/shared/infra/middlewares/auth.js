@@ -15,10 +15,14 @@ export default async function auth(req, res, next, role) {
 
       req.id = decoded.id;
       req.role = decoded.role;
-
-      if (decoded.role !== role) {
-         console.warn('Authorization: route not allowed to account', { decoded });
-         throw new AppError('unauthorized access', 412);
+      if (Array.isArray(role)) {
+         const auth = role.find(role => role === decoded.role);
+         if (auth) {
+            return next();
+         }
+      }
+      if (role !== decoded.role) {
+         throw new AppError('Unauthorized Access', 401);
       }
 
       return next();
