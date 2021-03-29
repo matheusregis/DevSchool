@@ -1,7 +1,7 @@
 import { Router } from 'express';
 
 import AppError from '@shared/errors/AppError';
-import { admin, client, allRoles } from '@config/roles';
+import { roleAdmin, roleClient, allRoles } from '@config/roles';
 import checkRole from '@shared/infra/middlewares/checkRole';
 import AuthenticateAccountService from '../services/AuthenticateAccountService';
 

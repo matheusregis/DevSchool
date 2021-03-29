@@ -1,3 +1,3 @@
-export const client = 'CLIENT';
-export const admin = 'ADMIN';
+export const roleClient = 'CLIENT';
+export const roleAdmin = 'ADMIN';
 export const allRoles = ['ADMIN', 'CLIENT'];
