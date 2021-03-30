@@ -8,6 +8,10 @@ const LanguagesSchema = new mongoose.Schema(
          required: true,
          unique: true,
       },
+      postId: {
+         type: [mongoose.Types.ObjectId],
+         default: [],
+      },
    },
    schemaOptions,
 );

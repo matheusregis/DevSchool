@@ -1,7 +1,7 @@
 import AppError from '@shared/errors/AppError';
 import LanguagesRepository from '../repositories/LanguagesRepository';
 
-export default class CreateAccountService {
+export default class CreateLanguageService {
    async execute({ languageName }) {
       if (!languageName) {
          throw new AppError('Invalid Fields', 400);

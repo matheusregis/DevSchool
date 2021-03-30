@@ -37,6 +37,14 @@ export default class Repository {
       return data;
    }
 
+   async updateOne(data) {
+      const { id } = data;
+
+      const result = await this.model.updateOne({ _id: id }, this.model.translateAliases(data));
+
+      return result;
+   }
+
    async findByIdAndUpdate(data) {
       const { id } = data;
 
